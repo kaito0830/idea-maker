@@ -1,0 +1,36 @@
+.html
+  .header
+    .header--logo
+      Idea-Maker
+    .header--btn
+      .header--btn--logout
+        %a(href="#"class="btn logout")
+          ログアウト
+        %a(href="#"class="btn post")
+          投稿
+          -# ラベル化してアイコンをボタン化する必要あり
+      .header--btn--icon
+        = icon("fas", "cog")
+  .header-search
+    検索
+  .body
+    -# ideaのブロックでひとかたまりのアイデア
+    %a(href="#" class="idea")
+      .idea--title
+        title: 大阪のたこ焼き屋を世界一の大企業に
+        -# idea-infoでユーザ名と値段の情報を持つ
+      .idea--info 
+        .idea--info--user_name
+          name: カイト
+        .idea--info--price
+          price: $1,000,000,000,000
+    %a(href="#" class="idea")
+      .idea--title
+        title: バドミントンラケットの最強の形状考えました
+        -# idea-infoでユーザ名と値段の情報を持つ
+      .idea--info 
+        .idea--info--user_name
+          name: カイト
+        .idea--info--price
+          price: $1,000,000,000,000
+        
